@@ -1,15 +1,15 @@
-# cljs-ring
+# cljs-ws
 
-A Leiningen template for creating new clojurescript projects hosted with ring!
+A Leiningen template for creating new clojurescript projects that use httpkit for websockets communication!
 
 ## Usage
 
-    % lein new cljs-ring gymnastics
-    % cd gymnastics
+    % lein new cljs-ws orb
+    % cd orb
     % lein cljsbuild once
-    % lein ring server
+    % lein run
     
-Clojurescript is happening!
+Clojurescript is communicating to HTTPKit over websockets!
 
 ## License
 
