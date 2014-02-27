@@ -18,8 +18,11 @@
              ["doc/intro.md" (render "doc/intro.md" data)]
              ["resources/public/index.html" (render "resources/public/index.html" data)]
              ["resources/public/css/{{name}}.css" (render "resources/public/css/schmetterling.css" data)]
+             ["src/cljx/{{sanitized}}/.gitkeep" (render "src/cljx/schmetterling/.gitkeep" data)]
              ["src/cljs/{{sanitized}}/connect.cljs" (render "src/cljs/schmetterling/connect.cljs" data)]
              ["src/cljs/{{sanitized}}/core.cljs" (render "src/cljs/schmetterling/core.cljs" data)]
              ["src/clj/{{sanitized}}/core.clj" (render "src/clj/schmetterling/core.clj" data)]
              ["src/clj/{{sanitized}}/server.clj" (render "src/clj/schmetterling/server.clj" data)]
-             ["test/{{sanitized}}/core_test.clj" (render "test/schmetterling/core_test.clj" data)])))
+             ["test/{{sanitized}}/core_test.clj" (render "test/schmetterling/core_test.clj" data)]
+             ["target/generated/cljs/.gitkeep" (render "target/generated/cljs/.gitkeep" data)]
+             ["target/generated/clj/.gitkeep" (render "target/generated/clj/.gitkeep" data)])))
